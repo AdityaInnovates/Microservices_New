@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import DataWithAside from "../components/mainComponents/dataWithAside";
+import DataWithAside from "../components/maincomponents/dataWithAside";
 import AsideNav from "../components/subComponents/asideNav";
 import Router from "next/router";
 const MainPanel = (props) => {

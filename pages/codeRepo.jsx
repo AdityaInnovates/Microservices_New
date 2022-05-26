@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import DataForCodeRepo from "../components/mainComponents/dataForCodeRepo";
+import DataForCodeRepo from "../components/maincomponents/dataForCodeRepo";
 
 const CodeRepo = (props) => {
   const [query, setquery] = useState({});
