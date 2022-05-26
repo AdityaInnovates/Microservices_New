@@ -4,7 +4,7 @@ import React, { useContext } from "react";
 import { User } from "../context/allcontexts";
 import Link from "next/link";
 import Router from "next/router";
-import FloatingButton from "../components/maincomponents/floatingButton";
+import FloatingButton from "../components/maincomponents/floatingButton.jsx";
 
 export default function InternSearch() {
   const { canGoBack, setcanGoBack } = useContext(User);

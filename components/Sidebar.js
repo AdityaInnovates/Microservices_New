@@ -1,6 +1,6 @@
 import React from "react";
 import $ from "jquery";
-import Datafordoc from "./subComponents/datafordoc";
+import Datafordoc from "./subComponents/datafordoc.jsx";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Router from "next/router";

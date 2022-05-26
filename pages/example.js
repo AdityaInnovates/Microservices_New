@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import router from "next/router";
 import styles from "../styles/Home.module.css";
-import SearchBar from "../components/SearchBar";
+import SearchBar from "../components/SearchBar.js";
 import { useState } from "react";
 import Popup from "../components/popup";
 
