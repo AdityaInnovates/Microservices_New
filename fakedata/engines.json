@@ -1,0 +1,19 @@
+[{"header":"Is there a cost associated with usage of the content filter?",
+"content":"No. The content filter is free to use."},
+
+{"header":"How can I adjust the threshold for certainty?",
+"content":"You can adjust the threshold for the filter by only allowing filtration on the labels that have a certainty level (logprob) above a threshold that you can determine. This is not generally recommended, however.\nIf you would like an even more conservative implementation of the Content Filter, you may return as 2 anything with an output_label of above, rather than accepting it only with certain logprob values."},
+
+
+
+{"header":"How can you personalize the filter?",
+"content":"For now, we aren't supporting finetuning for individual projects. However, we're still looking for data to improve the filter and would be very appreciative if you sent us data that triggered the filter in an unexpected way."},
+
+{"header":"What are some prompts I should expect lower performance on?",
+"content":"The filter currently has a harder time parsing prompts with strange formatting. Thus, if a prompt has a lot of linebreaks, unusual format, repeated words etc. then the model might misclassify it with a higher frequency. It also has lower performance on certain kinds of texts such as fiction, poetry, code etc.\nAdditionally, similar to the API, the filter will not have a knowledge base of things post 2019. Thus, it will perform poorly in identifying political, sensitive and harmful content that may require relevant knowledge of things that happened post 2019."},
+
+{"header":"Prompt Engineering Tips",
+"content":"If you're concerned about unsafe/sensitive outputs, in addition to figuring out what level you want to use the content filter at, you should try engineering your prompt to get responses appropriate for your use case. Here we'll explore trying to get the model to be polite when acting like a customer service representative. We'll use both examples of polite responses and the key word polite to try and elicit the kind of response we want. We made three generations for each prompt to get an idea of the impact. Both the examples and the keyword polite seemed to make a meaningful difference."},
+
+{"header":"(Note: We chose the word 'polite' for our experiment because it gave us good results for our use-case of a customer-service bot. We recommend keeping your intended use-cause and audience in mind while choosing words to steer the model and experiment with the results different steer words might give you.)",
+"content":""}]

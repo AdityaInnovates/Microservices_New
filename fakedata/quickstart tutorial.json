@@ -1,0 +1,28 @@
+[{"header":"Quickstart",
+"content":"OpenAI has trained cutting-edge language models that are very good at understanding and generating text. Our API provides access to these models and can be used to solve virtually any task that involves processing language.In this quickstart tutorial, you’ll build a simple sample application. Along the way, you’ll learn key concepts and techniques that are fundamental to using the API for any task, including:"},
+
+{"header":"Content generation",
+"content":"Summarization Classification, categorization, and sentiment analysis Data extraction Translation Many more! Introduction The completions endpoint is the core of our API and provides a simple interface that’s extremely flexible andpowerful. You input some text as a prompt, and the API will return a text completion that attempts to match whatever instructions or context you gave it."},
+
+{"header":"Prompt",
+"content":"Write a tagline for an ice cream shop. Completion We serve up smiles with every scoop! You can think of this as a very advanced autocomplete — the model processes your text prompt and tries to predict what’s most likely to come next."},
+
+{"header":"1 Start with an instruction",
+"content":"Imagine you want to create a pet name generator. Coming up with names from scratch is hard!\n First, you’ll need a prompt that makes it clear what you want. Let’s start with an instruction. Submit this prompt to generate your first completion."},
+{"header":"Suggest one name for a horse.",
+"content":"Not bad! Now, try making your instruction more specific."},
+
+{"header":"Suggest one name for a black horse.",
+"content":"As you can see, adding a simple adjective to our prompt changes the resulting completion. Designing your prompt is essentially how you “program” the model."},
+
+{"header":"2 Add some examples",
+"content":"Crafting good instructions is important for getting good results, but sometimes they aren’t enough. Let’s try making your instruction even more complex."},
+
+{"header":"Suggest three names for a horse that is a superhero",
+"content":"This completion isn't quite what we want. These names are pretty generic, and it seems like the model didn't pick up on the horse part of our instruction. Let’s see if we can get it to come up with some more relevant suggestions.\nIn many cases, it’s helpful to both show and tell the model what you want. Adding examples to your prompt can help communicate patterns or nuances. Try submitting this prompt which includes a couple examples.\nSuggest three names for an animal that is a superhero.\nAnimal: Cat\nNames: Captain Sharpclaw, Agent Fluffball, The Incredible Feline\nAnimal: Dog\nNames: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot\nAnimal: Horse\nNames:\nNice! Adding examples of the output we’d expect for a given input helped the model provide the types of names we were looking for."},
+
+{"header":"3 Adjust your settings",
+"content":"Prompt design isn’t the only tool you have at your disposal. You can also control completions by adjusting your settings. One of the most important settings is called temperature.\nYou may have noticed that if you submitted the same prompt multiple times in the examples above, the model would always return identical or very similar completions. This is because your temperature was set to 0.\nTry re-submitting the same prompt a few times with temperature set to 1.\nSuggest three names for an animal that is a superhero.\nAnimal: Cat\nNames: Captain Sharpclaw, Agent Fluffball, The Incredible Feline\nAnimal: Dog\nNames: Ruff the Protector, Wonder Canine, Sir Barks-a-Lot\nAnimal: Horse\nNames:\nTemperature\n"},
+{"header":"1 See what happened? When temperature is above 0, submitting the same prompt results in different completions each time.",
+
+"content":"Remember that the model predicts which text is most likely to follow the text preceding it. Temperature is a value between 0 and 1 that essentially lets you control how confident the model should be when making these predictions. Lowering temperature means it will take fewer risks, and completions will be more accurate and deterministic. Increasing temperature will result in more diverse completions.\nDEEP DIVE \n Understanding tokens and probabilities \n For your pet name generator, you probably want to be able to generate a lot of name ideas. A moderate temperature of 0.6 should work well."}]

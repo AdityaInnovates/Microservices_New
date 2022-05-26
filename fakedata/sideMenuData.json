@@ -1,0 +1,21 @@
+[
+  {
+    "GET STARTED": [
+      {
+        "header": "Introduction",
+        "content": ["Overview", " Key concepts", "Next steps"]
+      },
+      {
+        "header": "Quickstart tutorial",
+        "content": [
+          "Introduction",
+          "Start with an instruction",
+          "Add some examples"
+        ]
+      },
+      { "header": "Libraries", "content": "" },
+      { "header": "Engines", "content": "" },
+      { "header": "Usage guidelines", "content": "" }
+    ]
+  }
+]

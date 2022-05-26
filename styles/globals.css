@@ -1,0 +1,31 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/base.css';
+@import 'tailwindcss/utilities';
+html,
+@font-face {
+  font-family: siemensUI;
+  src: url("/siemens.ttf" )format("ttf");
+}
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: siemensUI;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
